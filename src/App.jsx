@@ -13,9 +13,6 @@ import Footer from './components/Footer/footer';
 function App() {
   return (
     <>
-      {/* <Nav />
-      <Main />
-      <Footer /> */}
 
       <Nav />
         <Routes>
@@ -27,15 +24,7 @@ function App() {
         </Routes>
       <Footer />
 
-      {/* <Routes>
-        <Route path="/" element={<Header />} />
-        <Route path="/menu" element={<Menu />} />
-        <Route path="/reservation" element={<Reservation />} />
-        <Route path="/orderonline" element={<OrderOnline />} />
-        <Route path="/about" element={<About />} />
-      </Routes> */}
     </>
-
   );
 }
 
