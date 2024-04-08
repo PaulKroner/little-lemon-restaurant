@@ -2,4 +2,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 15px;
 }
