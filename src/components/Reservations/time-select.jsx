@@ -1,33 +1,6 @@
 // import './TimeSelector.css';
 import React, { useState } from 'react';
 
-// const TimeCapsule = (props) => {
-
-//     // get the current time value  and pass to parent component
-//     const handleRadioChage = (e) => {
-//         props.chooseTime(e.target.value);
-//     }
-
-
-//     return (
-//             <div>
-//                 <h1>{props.morning}</h1>
-//                 <div className='timeslots-capsules' >
-//                 {
-//                     props.slots.map((item) => {
-//                         return (
-//                         <span className='radio-lablel-box'>
-//                             <label htmlFor={item} className='radio-btn-label'>
-//                                 <input type="radio" name="timeslots-m" id={item} value={item} onClick={handleRadioChage} />
-//                                 {item}
-//                             </label>
-//                         </span>)
-//                     })
-//                 }
-//                 </div>
-//             </div> 
-//     );
-// }
 
 const TimeSelect = (props) => {
 
@@ -35,6 +8,7 @@ const TimeSelect = (props) => {
 
     const handleTimeChange = (event) => {
         setSelectedTime(event.target.value);
+        props.chooseTime(event.target.value);
     };
 
     return (
@@ -75,18 +49,7 @@ const TimeSelect = (props) => {
                 />
                 18:00
             </label>
-            {/* {
-                (isMorning && ( <TimeCapsule chooseTime={props.chooseTime} morning="Morning" slots={props.availableTimeSlots.morning} /> ))
 
-                ||
-
-                (isAfternoon && ( <TimeCapsule chooseTime={props.chooseTime} morning="Afternoon" slots={props.availableTimeSlots.afternoon}/>))
-
-                ||
-
-                (isEvening && ( <TimeCapsule chooseTime={props.chooseTime} morning="Evening" slots={props.availableTimeSlots.evening}/> ))
-
-            } */}
         </div>
     );
 };

@@ -16,7 +16,6 @@ const GuestSelect = ({ chooseGuest }) => {
             setGuest(guest);
             setWarning('');
 
-            // pass number guests to parent component (Reservation)
             chooseGuest(guest);
         } else {
             setWarning(`* Max 10 guests`);
@@ -31,8 +30,6 @@ const GuestSelect = ({ chooseGuest }) => {
             setGuest(guest);
             setWarning('');
 
-            // pass number guests to parent (Reservation)
-            // chooseGuest(guest);
         } else {
             setWarning('* Min 1 guest');
         }

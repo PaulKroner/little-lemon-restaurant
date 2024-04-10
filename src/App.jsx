@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 import './App.css';
 import Main from './components/Main/main';
 import Header from './components/Header/header';
+import ConfirmedBooking from './components/Reservations/confirmed-booking';
 import Nav from './components/Nav/nav';
 import Menu from './components/Main/Menu/menu';
 import Reservation from './components/Reservations/reservations';
@@ -21,6 +22,7 @@ function App() {
           <Route path="/reservation" element={<Reservation />} />
           <Route path="/orderonline" element={<OrderOnline />} />
           <Route path="/about" element={<About />} />
+          <Route path='/ConfirmedBooking' element={<ConfirmedBooking/>}/>
         </Routes>
       <Footer />
 

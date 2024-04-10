@@ -34,7 +34,7 @@ const DateSelect = (props) => {
 
     const hour = new Date().toTimeString().split(' ')[0].split(':');
     
-    const startingTime = 8; // 8 AM
+    const startingTime = 8; // somehow 9 AM
     const closoingTime = 21; // 9 PM
 
     if (parseInt(hour[0]) > startingTime && parseInt(hour[0]) < closoingTime) {
