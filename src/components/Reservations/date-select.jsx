@@ -1,5 +1,5 @@
-// import './DateSelector.css'
-import React, {useState, useRef} from 'react';
+import './date-select.css'
+import React, { useState, useRef } from 'react';
 
 const ocassions = [
     {
@@ -10,7 +10,7 @@ const ocassions = [
         label: 'Anniversary',
         value: 'anniversary'
     }
-    
+
 ]
 
 const DateSelect = (props) => {
@@ -33,7 +33,7 @@ const DateSelect = (props) => {
 
 
     const hour = new Date().toTimeString().split(' ')[0].split(':');
-    
+
     const startingTime = 8; // somehow 9 AM
     const closoingTime = 21; // 9 PM
 
@@ -54,52 +54,54 @@ const DateSelect = (props) => {
     }
 
     return (
-        <div className="reservation__date-selector">
-        <div className='reservation__date-selector-date-time'>
-            <h1 className='title'>Date</h1>
-            <div className='date-time'>
+        <div>
+            <div className="date-layout">
+                <h1 className="date-heading">Date</h1>
+                <div className="date-counter-layout">
 
-                <div className='date'>
-                    {
-                        dateStr[2]  + " " + dateStr[1] + " " + dateStr[3]
-                    }
+                    <span className="date-display">
+                        <div className="">
+                            {
+                                dateStr[2] + " " + dateStr[1] + " " + dateStr[3]
+                            }
+                        </div>
+
+                        <div className="">
+                            {
+                                timeStr[0]
+                            }
+                        </div>
+                    </span>
+
                 </div>
-
-                <div className='time'>
-                    {
-                        timeStr[0]
-                    }
-                </div>
-
             </div>
-        </div>
 
-        <div className='open-closed'>
+            <div className="cafestatus">
                 <h1 className={`title ${cafeStatus} status`}>{cafeStatus}</h1>
-        </div>
+            </div>
 
-        {/* add date selector and ocassion selector */}
-        {/* get date and ocassion values and pass to parent component */}
-        <div className="">
-            <input 
-                ref={dateRef} 
-                onChange={handleClickedDate}
-                type="date" 
-                className='date-selector' />
+            {/* add date selector and ocassion selector */}
+            {/* get date and ocassion values and pass to parent component */}
+            <div className="choose-date">
+                <input
+                    ref={dateRef}
+                    onChange={handleClickedDate}
+                    type="date"
+                    className="date-select" />
                 {/* provide defalut value: theOcassion */}
                 {/* ocassion value is comming from parent and then onchange, send data to parent */}
-            <select className='ocassion-selector' value={props.ocassion}  onChange={handleOcassionChange}>
-               {
-                ocassions.map((ocassion) => {
-                return (
-                    <option value={ocassion.value}>
-                        {ocassion.label}
-                    </option>
-                );
-                })
-               }
-            </select>
-        </div>
+                <select className="occasion-select" value={props.ocassion} onChange={handleOcassionChange}>
+                    {
+                        ocassions.map((ocassion) => {
+                            return (
+                                <option value={ocassion.value}>
+                                    {ocassion.label}
+                                </option>
+                            );
+                        })
+                    }
+                </select>
+            </div>
         </div>
     );
 };

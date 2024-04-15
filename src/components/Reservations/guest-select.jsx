@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import "./guest-select.css";
 
-const style =  {
+const style = {
     fontSize: '16px',
     color: 'red',
 }
@@ -23,9 +24,9 @@ const GuestSelect = ({ chooseGuest }) => {
 
     }
 
-    const decrement =() => {
+    const decrement = () => {
 
-        if (guest > 1){
+        if (guest > 1) {
             guest--;
             setGuest(guest);
             setWarning('');
@@ -37,34 +38,37 @@ const GuestSelect = ({ chooseGuest }) => {
     }
 
     return (
-        <div className=''>
+        <div>
+            <div className='guest-layout'>
 
-            <h1 className=''>Guest</h1>
+                <h1 className='guest-heading'>Guest</h1>
 
-            <div className=''>
+                <div className='guest-counter-layout'>
 
-                    <div className="">
-                        <div onClick={decrement}>
+                    <div className="guest-counter">
+                        <div onClick={decrement} className="counter-sign">
                             -
                         </div>
 
-                        <div>
+                        <div className="">
                             {guest}
                         </div>
 
-                        <div onClick={increment}>
+                        <div onClick={increment} className="counter-sign counter-sign-minus">
                             +
-                        </div>                      
+                        </div>
                     </div>
-                { // Conditional rendering based on guest count
-                    guest <= 1 && (<span style={style}>{warning}</span>)
-                        ||
-                    guest >= 6 && (<span style={style}>{warning}</span>) 
-                }
+
+                </div>
 
             </div>
-
+            { // Conditional rendering based on guest count
+                guest <= 1 && (<span style={style}>{warning}</span>)
+                ||
+                guest >= 6 && (<span style={style}>{warning}</span>)
+            }
         </div>
+
     );
 };
 

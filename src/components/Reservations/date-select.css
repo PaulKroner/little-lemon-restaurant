@@ -1,0 +1,109 @@
+.date-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #EDEFEE;
+    margin-top: 3rem;
+}
+
+.date-heading {
+    font-size: 35px;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: green;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.date-counter-layout {
+    display: flex;
+    align-items: center;
+    background-color: green;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.date-display {
+    display: flex;
+    flex-direction: column;
+    font-size: 35px
+}
+
+.cafestatus {
+    background-color: green;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #EDEFEE;
+    margin-top: 2rem;
+}
+
+.choose-date {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
+    margin-top: 2rem;
+}
+
+input[type="date"] {
+    background-color: green;
+    color: #f1f1f1;
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+
+    width: 210px;
+    height: 60px;
+}
+
+::-webkit-calendar-picker-indicator {
+    background-color: #f1f1f1;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.occasion-select {
+    background-color: green;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 230px;
+    height: 80px;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='30' viewBox='0 0 24 24' width='30' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: 50%;
+}
+
+@media screen and (max-width: 780px) {
+    .reservation__date-selector {
+        font-size: 28px;
+        padding: 25px;
+    }
+
+    .choose-date {
+        flex-direction: column;
+    }
+}

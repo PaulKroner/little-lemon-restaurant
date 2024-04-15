@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import DateSelect from "./date-select";
 import GuestSelect from "./guest-select";
 import TimeSelect from "./time-select";
+import "./reservations.css";
 
 const Reservations = (props) => {
     const [time, setTime] = useState('00:00');
@@ -61,16 +62,21 @@ const Reservations = (props) => {
     }
 
     return (
-        <form onSubmit={onSubmitHandler}>
-            <h1>Reservations</h1>
-            <GuestSelect chooseGuest={chooseGuest} />
-            <DateSelect chooseDate={chooseDate} chooseOcassion={chooseOcassion} ocassion={ocassion} />
-            <TimeSelect chooseTime={chooseTime} />
+        <div className="reservation-layout">
+            <form onSubmit={onSubmitHandler} className="reservation-form">
+                <h1 className="reservation-heading">
+                    Reservations
+                </h1>
+                <GuestSelect chooseGuest={chooseGuest} />
+                <DateSelect chooseDate={chooseDate} chooseOcassion={chooseOcassion} ocassion={ocassion} />
+                <TimeSelect chooseTime={chooseTime} />
 
-            { // Enable, Disable Submit button on form validation
-                validateReservation() ? <button disabled={false}>Submit</button> : <button disabled={true}>Submit</button>
-            }
-        </form>
+                { // Enable, Disable Submit button on form validation
+                    validateReservation() ? <button disabled={false}>Submit</button> : <button disabled={true}>Submit</button>
+                }
+            </form>
+        </div>
+
     );
 }
 

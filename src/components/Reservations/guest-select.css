@@ -1,0 +1,44 @@
+.guest-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #EDEFEE;
+}
+
+.guest-heading {
+    font-size: 35px;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: green;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.guest-counter-layout {
+    display: flex;
+    align-items: center;
+    background-color: green;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.guest-counter {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.counter-sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    font-weight: 900;
+}
