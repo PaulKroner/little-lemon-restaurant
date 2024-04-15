@@ -38,9 +38,9 @@ const DateSelect = (props) => {
     const closoingTime = 21; // 9 PM
 
     if (parseInt(hour[0]) > startingTime && parseInt(hour[0]) < closoingTime) {
-        cafeStatus = 'Open';
+        cafeStatus = 'We´re open';
     } else {
-        cafeStatus = 'closed';
+        cafeStatus = 'Were closed';
     }
 
     // get date value from input using useRef hook

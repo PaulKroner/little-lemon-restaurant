@@ -1,9 +1,11 @@
 .reservation-layout {
-    height: 100rem;
+    /* height: 100rem; */
     display: flex;
     justify-content: center;
     align-items: center;
     /* margin-top: -20rem; */
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 .reservation-form {

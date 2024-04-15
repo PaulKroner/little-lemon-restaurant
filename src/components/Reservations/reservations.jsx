@@ -57,6 +57,7 @@ const Reservations = (props) => {
     // Handler Function to submit the reservation data to the server
     const submitReservation = (reservation) => {
         console.log("Reservation From Data: ", reservation);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
         navigate('/ConfirmedBooking');
     }
 
