@@ -32,6 +32,7 @@
     border-radius: 10px;
     transition: 0.3s;
     border: none;
+    transition: all 0.3s ease;
 }
 
 .submit-Button:disabled {
@@ -46,4 +47,9 @@
 
 .submit-Button:enabled {
     cursor: pointer;
+}
+
+.submit-Button:enabled:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }

@@ -1,4 +1,4 @@
-import bookingConfirmed from '../../assets/bookingConfirmed.png';
+import bookingConfirmed from '../../../assets/bookingConfirmed.png';
 import "./confirmed-booking.css";
 
 const ConfirmedBooking = () => {

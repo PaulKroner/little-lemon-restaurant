@@ -3,7 +3,7 @@ import { Route } from 'react-router-dom';
 import './App.css';
 import Main from './components/Main/main';
 import Header from './components/Header/header';
-import ConfirmedBooking from './components/Reservations/confirmed-booking';
+import ConfirmedBooking from './components/Reservations/confirmed-booking/confirmed-booking';
 import Nav from './components/Nav/nav';
 import Menu from './components/Main/Menu/menu';
 import Reservation from './components/Reservations/reservations';

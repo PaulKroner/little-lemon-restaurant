@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import DateSelect from "./date-select";
-import GuestSelect from "./guest-select";
-import TimeSelect from "./time-select";
+import DateSelect from "./date-select/date-select";
+import GuestSelect from "./guest-select/guest-select";
+import TimeSelect from "./time-select/time-select";
 import "./reservations.css";
 
 const Reservations = (props) => {
