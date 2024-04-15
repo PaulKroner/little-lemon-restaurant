@@ -1,0 +1,37 @@
+.main-layout {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    padding-top: 15rem;
+    height: 60rem;
+}
+
+.main-header {
+    font-size: 35px;
+    font-weight: 900;
+    color: #F4CE14;
+}
+
+.main-text-content {
+    margin-bottom: 3rem;
+    color: white;
+    font-size: 23px;
+}
+
+.main-button {
+    background-color: #F4CE14;
+    color: black;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 40%;
+    transition: all 0.3s ease;
+}
+
+.main-button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}

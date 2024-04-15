@@ -6,6 +6,7 @@
     padding-left: 3rem;
     padding-right: 3rem;
     background: rgba(210, 210, 210, 0.65);
+    /* width: 100%; */
     /* width: 100vw;
     backdrop-filter: blur(4px);
     --webkit-backdrop-filter: blur(4px);

@@ -1,0 +1,22 @@
+.confirmed-booking-layout {
+    height: 90rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirmed-booking-sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F4CE14;
+    border-radius: 10px;
+    padding: 4rem;
+    filter: drop-shadow(10px 10px 18px #000000);
+    margin-bottom: 20rem;
+}
+
+.confirmed {
+    color: black;
+}
