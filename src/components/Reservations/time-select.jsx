@@ -1,4 +1,4 @@
-// import './TimeSelector.css';
+import './time-select.css';
 import React, { useState } from 'react';
 
 
@@ -12,8 +12,8 @@ const TimeSelect = (props) => {
     };
 
     return (
-        <div className="">
-            <label>
+        <div className="reservation__time-selector">
+            <label className="radio">
                 <input
                     type="radio"
                     value="09:00"
@@ -22,7 +22,7 @@ const TimeSelect = (props) => {
                 />
                 09:00
             </label>
-            <label>
+            <label className="radio">
                 <input
                     type="radio"
                     value="12:00"
@@ -31,7 +31,7 @@ const TimeSelect = (props) => {
                 />
                 12:00
             </label>
-            <label>
+            <label className="radio">
                 <input
                     type="radio"
                     value="15:00"
@@ -40,7 +40,7 @@ const TimeSelect = (props) => {
                 />
                 15:00
             </label>
-            <label>
+            <label className="radio">
                 <input
                     type="radio"
                     value="18:00"

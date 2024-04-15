@@ -57,7 +57,6 @@ const Reservations = (props) => {
     // Handler Function to submit the reservation data to the server
     const submitReservation = (reservation) => {
         console.log("Reservation From Data: ", reservation);
-        alert("Data Submitted Successfully");
         navigate('/ConfirmedBooking');
     }
 
@@ -72,7 +71,7 @@ const Reservations = (props) => {
                 <TimeSelect chooseTime={chooseTime} />
 
                 { // Enable, Disable Submit button on form validation
-                    validateReservation() ? <button disabled={false}>Submit</button> : <button disabled={true}>Submit</button>
+                    validateReservation() ? <button className="submit-Button" disabled={false}>Submit</button> : <button className="submit-Button" disabled={true}>Submit</button>
                 }
             </form>
         </div>

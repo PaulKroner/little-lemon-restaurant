@@ -77,7 +77,9 @@ const DateSelect = (props) => {
             </div>
 
             <div className="cafestatus">
-                <h1 className={`title ${cafeStatus} status`}>{cafeStatus}</h1>
+                <span className="cafestatus-box">
+                    <h1 className={`title ${cafeStatus} status`}>{cafeStatus}</h1>
+                </span>
             </div>
 
             {/* add date selector and ocassion selector */}
