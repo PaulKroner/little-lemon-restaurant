@@ -7,10 +7,11 @@ import { IoIosMenu } from "react-icons/io";
 
 const Nav = () => {
 
-    const [sidebarOpen, setSidebarOpen] = useState(false);
+    const [sidebarOpen, setSidebarOpen] = useState(true);
 
     const toggleSidebar = () => {
         setSidebarOpen(!sidebarOpen);
+        console.log(sidebarOpen)
     };
 
     return (
