@@ -38,7 +38,6 @@ const Nav = () => {
 
                     </>
                 ) : (
-                    // <ul className={`${sidebarOpen ? '' : 'nav-list-mobile'}`}>
                     <ul className={`${sidebarOpen ? '' : 'nav-list-mobile'}`}>
                         <div className="d-flex flex-row justify-content-between align-items-center">
                             <div className="navbar-logo-mobile">

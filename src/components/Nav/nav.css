@@ -39,10 +39,6 @@ ul {
     display: none;
 }
 
-/* .nav-list-mobile {
-    display: none;
-} */
-
 .link-mobile {
     display: none;
 }
@@ -72,7 +68,6 @@ ul {
 
     .link {
         display: none;
-        /* font-size: 20px; */
     }
 
     .nav-list-mobile {
