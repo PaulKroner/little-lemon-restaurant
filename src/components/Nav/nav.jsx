@@ -14,21 +14,53 @@ const Nav = () => {
     };
 
     return (
-        <nav className="nav container-fluid d-flex flex-row justify-content-between align-items-center">
-            <div className="navbar-logo">
-                <img src={logo} alt="logo" />
-            </div>
-            <ul className={`nav-list ${sidebarOpen ? 'sidebar-open' : ''} d-flex justify-content-center align-items-center`}>
-                <Link className="link" to="/">Home</Link>
-                <Link className="link" to="/menu">Menu</Link>
-                <Link className="link" to="/reservation">Reservation</Link>
-                <Link className="link" to="/orderonline">Order Online</Link>
-                <Link className="link" to="/about">About</Link>
-            </ul>
-            <div className="menu-icon" onClick={toggleSidebar}>
-                <IoIosMenu size={70}/>
+        <nav className="">
+            <div className="nav container-fluid d-flex flex-row justify-content-between align-items-center">
+                <div className="navbar-logo">
+                    <img src={logo} alt="logo" />
+                </div>
+                <ul className={`nav-list ${sidebarOpen ? 'sidebar-open' : ''} d-flex justify-content-center align-items-center`}>
+                    <Link className="link" to="/">Home</Link>
+                    <Link className="link" to="/menu">Menu</Link>
+                    <Link className="link" to="/reservation">Reservation</Link>
+                    <Link className="link" to="/orderonline">Order Online</Link>
+                    <Link className="link" to="/about">About</Link>
+                </ul>
+
+                <div className="menu-icon" onClick={toggleSidebar}>
+                    <IoIosMenu size={70} />
+                </div>
             </div>
 
+            {
+                sidebarOpen ? (
+                    <>
+
+                    </>
+                ) : (
+                    // <ul className={`${sidebarOpen ? '' : 'nav-list-mobile'}`}>
+                    <ul className={`${sidebarOpen ? '' : 'nav-list-mobile'}`}>
+                        <div className="d-flex flex-row justify-content-between align-items-center">
+                            <div className="navbar-logo-mobile">
+                                <img src={logo} alt="logo" />
+                            </div>
+
+                            <div className="menu-icon" onClick={toggleSidebar}>
+                                <IoIosMenu size={70} />
+                            </div>
+                        </div>
+
+                        <div className="link-list-mobile d-flex flex-column justify-content-center align-items-center">
+                            <Link className="link-mobile" to="/">Home</Link>
+                            <Link className="link-mobile" to="/menu">Menu</Link>
+                            <Link className="link-mobile" to="/reservation">Reservation</Link>
+                            <Link className="link-mobile" to="/orderonline">Order Online</Link>
+                            <Link className="link-mobile" to="/about">About</Link>
+                        </div>
+
+                    </ul>
+                )
+            }
         </nav>
     );
 };
