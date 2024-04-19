@@ -3,7 +3,7 @@ import Header from "../../Header/header";
 
 const Menu = () => {
     return (
-        <div>
+        <div className="container-fluid">
             <h1>Menu</h1>
             <Header title="test" buttonText="klick" />
         </div>
