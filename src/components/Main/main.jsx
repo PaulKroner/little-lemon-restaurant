@@ -14,8 +14,8 @@ const Main = () => {
 
 
   return (
-    <div className="d-flex justify-content-center flex-column p-1 mt-5 mb-5">
-      <div className="main-layout container d-flex justify-content-center p-4">
+    <div className="d-flex justify-content-center flex-column p-1 mt-5">
+      <div className="main-layout container d-flex justify-content-center mb-5">
         <span className="d-flex flex-column justify-content-around align-itmes-center">
           <header>
             <h1 className="main-header">Little Lemon Restaurant</h1>
@@ -35,7 +35,7 @@ const Main = () => {
 
         </span>
 
-        <span className="col">
+        <span className="d-flex justify-content-center align-itmes-center">
           <img className="main-pic" src={restaurtantfood} alt="" />
         </span>
 
