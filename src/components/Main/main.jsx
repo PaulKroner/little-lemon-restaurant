@@ -14,8 +14,8 @@ const Main = () => {
 
 
   return (
-    <div className="d-flex justify-content-center flex-column p-2 mt-5 mb-5">
-      <div className="main-layout container d-flex justify-content-center p-5 w-75">
+    <div className="d-flex justify-content-center flex-column p-1 mt-5 mb-5">
+      <div className="main-layout container d-flex justify-content-center p-4">
         <span className="d-flex flex-column justify-content-around align-itmes-center">
           <header>
             <h1 className="main-header">Little Lemon Restaurant</h1>
@@ -27,10 +27,12 @@ const Main = () => {
             sed diam voluptua.
             At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
           </span> */}
+          <div className="d-flex justify-content-center">
+            <button className="main-button w-75" onClick={ReserveTable}>
+              Reserve a table
+            </button>
+          </div>
 
-          <button className="main-button w-75" onClick={ReserveTable}>
-            Reserve a table
-          </button>
         </span>
 
         <span className="col">
