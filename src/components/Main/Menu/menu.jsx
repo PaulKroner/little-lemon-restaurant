@@ -11,14 +11,14 @@ const Menu = () => {
             {/* <h1>Menu</h1> */}
             {/* <Header title="test" buttonText="klick" /> */}
 
-            <div className="order-online-header d-flex justify-content-between mb-3 gap-3">
+            <div className="order-online-header d-flex justify-content-between mb-3">
                 <span className="specials">This week specials</span>
                 <button type="button" className="order-online-button">Online Menu</button>
             </div>
 
-            <div className="d-flex flex-wrap justify-content-between align-items-center p-1 gap-4">
+            <div className="d-flex flex-wrap justify-content-center align-items-center p-1 gap-4">
 
-                <div className="meal-card container d-flex flex-column p-3">
+                <div className="meal-card d-flex flex-column p-3">
                     <img className="meal-img" src={greeksalad} alt="" />
                     <span className="">
                         <div className="d-flex flex-row justify-content-between">
@@ -28,12 +28,14 @@ const Menu = () => {
                         <p className="meal-content display-6">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                             sed diam nonumy eirmod tempor invidunt ut labore et dolore
                             magna aliquyam erat</p>
-                        <button className="meal-button">Order delivery</button>
+                        <div className="d-flex justify-content-center">
+                            <button className="meal-button">Order delivery</button>
+                        </div>
                     </span>
 
                 </div>
 
-                <div className="meal-card container d-flex flex-column p-3">
+                <div className="meal-card d-flex flex-column p-3">
                     <img className="meal-img" src={bruchetta} alt="" />
                     <span className="">
                         <div className="d-flex flex-row justify-content-between">
@@ -43,11 +45,13 @@ const Menu = () => {
                         <p className="meal-content display-6">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                             sed diam nonumy eirmod tempor invidunt ut labore et dolore
                             magna aliquyam erat</p>
-                        <button className="meal-button">Order delivery</button>
+                        <div className="d-flex justify-content-center">
+                            <button className="meal-button">Order delivery</button>
+                        </div>
                     </span>
                 </div>
 
-                <div className="meal-card container d-flex flex-column p-3">
+                <div className="meal-card d-flex flex-column p-3">
                     <img className="meal-img" src={lemonDessert} alt="" />
                     <span className="">
                         <div className="d-flex flex-row justify-content-between">
@@ -57,7 +61,9 @@ const Menu = () => {
                         <p className="meal-content display-6">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                             sed diam nonumy eirmod tempor invidunt ut labore et dolore
                             magna aliquyam erat</p>
-                        <button className="meal-button">Order delivery</button>
+                        <div className="d-flex justify-content-center">
+                            <button className="meal-button">Order delivery</button>
+                        </div>
                     </span>
                 </div>
             </div>
