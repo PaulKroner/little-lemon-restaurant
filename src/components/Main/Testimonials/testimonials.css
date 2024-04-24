@@ -1,0 +1,32 @@
+.testimonials-layout {
+    background-color: #495E57;
+}
+
+.testimonials-heading {
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.testi-card {
+    background-color: #EDEFEE;
+    border-radius: 10px;
+    width: 30rem;
+}
+
+.customer-img {
+    width: 8rem;
+    margin: 0 auto 0.5rem auto;
+    border-radius: 50%;
+}
+
+.card-name {
+    color: #495E57;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.card-paragraph {
+    color: #495E57;
+    font-weight: 400;
+    font-size: 1.5rem;
+}

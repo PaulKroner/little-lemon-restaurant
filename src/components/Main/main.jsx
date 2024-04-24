@@ -3,6 +3,7 @@ import './main.css';
 import { useNavigate } from "react-router-dom";
 import Menu from './Menu/menu';
 import restaurtantfood from '../../assets/restauranfood.jpg';
+import Testimonials from './Testimonials/testimonials';
 
 const Main = () => {
 
@@ -42,6 +43,7 @@ const Main = () => {
       </div>
 
       <Menu />
+      <Testimonials />
     </div>
   );
 };
