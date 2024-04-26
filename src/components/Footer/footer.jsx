@@ -9,21 +9,33 @@ const Footer = () => {
 
         <img src={restaurant} alt="restaurant" className="image-box" />
 
-        <div className="footer-items">
-          <h1 className="footer-items-heading">Contact</h1>
-          <ul className="footer-items-content">
-            <li>Address</li>
-            <li>Phone</li>
-            <li>Contact</li>
+        <div className="footer-items container d-flex flex-column justify-content-center">
+          <h1 className="footer-items-heading d-flex justify-content-center">Contact</h1>
+          <ul className="footer-items-content d-flex justify-content-center flex-column">
+            <div class="d-flex justify-content-center">
+              <li>Address</li>
+            </div>
+            <div class="d-flex justify-content-center">
+              <li>Phone</li>
+            </div>
+            <div class="d-flex justify-content-center">
+              <li>Contact</li>
+            </div>
           </ul>
         </div>
 
-        <div className="footer-items">
-          <h1 className="footer-items-heading">Social Media</h1>
-          <ul className="footer-items-content">
-            <li>Instagram</li>
-            <li>Facebook</li>
-            <li>Youtube</li>
+        <div className="footer-items container d-flex flex-column justify-content-center">
+          <h1 className="footer-items-heading d-flex justify-content-center">Social Media</h1>
+          <ul className="footer-items-content d-flex justify-content-center flex-column">
+            <div class="d-flex justify-content-center">
+              <li>Instagram</li>
+            </div>
+            <div class="d-flex justify-content-center">
+              <li>Facebook</li>
+            </div>
+            <div class="d-flex justify-content-center">
+              <li>YouTube</li>
+            </div>
           </ul>
         </div>
 
