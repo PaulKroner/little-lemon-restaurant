@@ -29,7 +29,7 @@ const Main = () => {
             At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
           </span> */}
           <div className="d-flex justify-content-center">
-            <button className="main-button w-75" onClick={ReserveTable}>
+            <button className="desktop-button main-button w-75" onClick={ReserveTable}>
               Reserve a table
             </button>
           </div>
@@ -39,6 +39,12 @@ const Main = () => {
         <span className="d-flex justify-content-center align-itmes-center">
           <img className="main-pic" src={restaurtantfood} alt="" />
         </span>
+
+        <div className="d-flex justify-content-center">
+            <button className="mobile-button main-button w-75" onClick={ReserveTable}>
+              Reserve a table
+            </button>
+          </div>
 
       </div>
 

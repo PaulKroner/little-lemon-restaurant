@@ -47,6 +47,13 @@
     object-fit: cover;
 }
 
+.desktop-button {
+    /* display: block !important; */
+}
+
+.mobile-button {
+    display: none !important;
+}
 @media screen and (max-width: 1000px) {
     .main-layout {
         flex-direction: column !important;
@@ -63,5 +70,13 @@
         /* Ensure image doesn't exceed parent width */
         height: auto;
         /* Maintain aspect ratio */
+    }
+
+    .desktop-button {
+        display: none !important;
+    }
+
+    .mobile-button {
+        display: block !important;
     }
 }
