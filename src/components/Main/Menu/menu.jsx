@@ -7,7 +7,7 @@ import lemonDessert from "../../../assets/lemonDessert.jpg";
 
 const Menu = () => {
     return (
-        <div className="container-fluid d-flex flex-column p-5">
+        <div className="container-fluid d-flex flex-column p-3">
             {/* <h1>Menu</h1> */}
             {/* <Header title="test" buttonText="klick" /> */}
 
