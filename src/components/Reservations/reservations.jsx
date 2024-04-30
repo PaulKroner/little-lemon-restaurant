@@ -62,8 +62,8 @@ const Reservations = (props) => {
     }
 
     return (
-        <div className="reservation-layout">
-            <form onSubmit={onSubmitHandler} className="reservation-form">
+        <div className="reservation-layout d-flex justify-content-center align-items-center">
+            <form onSubmit={onSubmitHandler} className="reservation-form d-flex flex-column p-4">
                 <h1 className="reservation-heading">
                     Reservations
                 </h1>

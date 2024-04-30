@@ -1,12 +1,8 @@
 .confirmed-booking-layout {
     height: 60rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .confirmed-booking-sign {
-    flex-direction: column;
     background-color: #F4CE14;
     border-radius: 10px;
     padding: 4rem;

@@ -12,7 +12,7 @@ const TimeSelect = (props) => {
     };
 
     return (
-        <div className="reservation__time-selector">
+        <div className="reservation__time-selector d-flex flex-row justify-content-center">
             <label className="radio">
                 <input
                     type="radio"

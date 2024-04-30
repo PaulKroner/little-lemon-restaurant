@@ -39,13 +39,13 @@ const GuestSelect = ({ chooseGuest }) => {
 
     return (
         <div>
-            <div className='guest-layout'>
+            <div className='guest-layout d-flex flex-row justify-content-between'>
 
-                <h1 className='guest-heading'>Guest</h1>
+                <h1 className='guest-heading d-flex justify-content-center align-items-center'>Guest</h1>
 
-                <div className='guest-counter-layout'>
+                <div className='guest-counter-layout d-flex align-items-center'>
 
-                    <div className="guest-counter">
+                    <div className="guest-counter d-flex justify-content-left align-items-center">
                         <div onClick={decrement} className="counter-sign">
                             -
                         </div>
@@ -54,7 +54,7 @@ const GuestSelect = ({ chooseGuest }) => {
                             {guest}
                         </div>
 
-                        <div onClick={increment} className="counter-sign counter-sign-minus">
+                        <div onClick={increment} className="counter-sign counter-sign-minus d-flex justify-content-center align-items-center">
                             +
                         </div>
                     </div>

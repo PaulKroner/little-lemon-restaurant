@@ -1,7 +1,4 @@
 .reservation__time-selector {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     padding: 50px;
     font-family: 'Markazi Text', serif;
     font-size: 40px;
@@ -55,6 +52,7 @@ input[type="radio"] {
     .reservation__time-selector {
         font-size: 28px;
         padding: 25px;
+        flex-wrap: wrap;
     }
     
     .timeslots-capsules {

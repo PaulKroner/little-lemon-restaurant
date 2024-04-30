@@ -55,11 +55,11 @@ const DateSelect = (props) => {
 
     return (
         <div>
-            <div className="date-layout">
-                <h1 className="date-heading">Date</h1>
-                <div className="date-counter-layout">
+            <div className="date-layout d-flex flex-row justify-content-between">
+                <h1 className="date-heading d-flex justify-content-center align-items-center">Date</h1>
+                <div className="date-counter-layout d-flex justify-content-center align-items-center">
 
-                    <span className="date-display">
+                    <span className="date-display d-flex flex-column">
                         <div className="">
                             {
                                 dateStr[2] + " " + dateStr[1] + " " + dateStr[3]
@@ -76,15 +76,15 @@ const DateSelect = (props) => {
                 </div>
             </div>
 
-            <div className="cafestatus">
-                <span className="cafestatus-box">
+            <div className="cafestatus d-flex justify-content-center align-items-center">
+                <span className="cafestatus-box d-flex justify-content-center align-items-center">
                     <h1 className={`title ${cafeStatus} status`}>{cafeStatus}</h1>
                 </span>
             </div>
 
             {/* add date selector and ocassion selector */}
             {/* get date and ocassion values and pass to parent component */}
-            <div className="choose-date">
+            <div className="choose-date d-flex justify-content-center align-items-center">
                 <input
                     ref={dateRef}
                     onChange={handleClickedDate}
