@@ -16,7 +16,7 @@ const Nav = () => {
 
     return (
         <nav className="">
-            <div className="nav container-fluid d-flex flex-row justify-content-between align-items-center">
+            <div className="navigationbar container-fluid d-flex flex-row justify-content-between align-items-center">
                 <div className="navbar-logo">
                     <img src={logo} alt="logo" />
                 </div>

@@ -1,4 +1,4 @@
-.nav {
+.navigationbar {
     padding: 1rem;
     padding-left: 3rem;
     padding-right: 3rem;
@@ -22,7 +22,7 @@ ul {
     text-decoration: none;
     flex-direction: column;
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: 600;
     transition: all 0.3s ease-in-out;
 }
@@ -49,8 +49,8 @@ ul {
 
 /* mobile */
 
-@media screen and (max-width: 910px) {
-    .nav {
+@media screen and (max-width: 1030px) {
+    .navigationbar {
         padding: 1rem;
         padding-left: 1rem !important;
         padding-right: 1rem !important;
