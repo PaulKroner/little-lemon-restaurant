@@ -2,7 +2,7 @@
 
 const About = () => {
     return (
-        <div className="about">
+        <div className="about container p-2">
             <h1>About Us</h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
