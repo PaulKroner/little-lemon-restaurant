@@ -29,7 +29,7 @@ const Main = () => {
             At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
           </span> */}
           <div className="d-flex justify-content-center">
-            <button className="desktop-button main-button w-50" onClick={ReserveTable}>
+            <button className="desktop-button main-button" onClick={ReserveTable}>
               Reserve a table
             </button>
           </div>

@@ -10,24 +10,24 @@
 }
 
 .order-online-button {
-    border-radius: 10px;
     background-color: #F4CE14;
     color: black;
     outline: none;
     border: none;
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: 700;
     border-radius: 30px;
     padding: 1rem;
     transition: all 0.3s ease;
-    /* filter: drop-shadow(10px 10px 18px #000000); */
+    filter: drop-shadow(10px 10px 18px #000000);
+    width: 15rem !important;
 }
 
 .meal-card {
     background-color: #EDEFEE;
     border-radius: 10px;
-    max-width: 35rem !important;
-    /* height: 55rem; */
+    max-width: 20rem !important;
+    height: 45rem;
 }
 
 .meal-img {
@@ -40,31 +40,33 @@
 }
 
 .meal-header {
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 700;
     color: #495E57;
 }
 
 .meal-price {
-    font-size: 3rem;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 700;
     color: #EE9972;
 }
 
 .meal-content {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .meal-button {
-    border-radius: 10px;
     background-color: #F4CE14;
     color: black;
     outline: none;
     border: none;
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 700;
     border-radius: 30px;
     padding: 1rem;
     transition: all 0.3s ease;
+    /* filter: drop-shadow(10px 10px 18px #000000); */
+    width: auto !important;
 }
 
 @media screen and (max-width: 1000px) {

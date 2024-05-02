@@ -22,10 +22,10 @@ const Menu = () => {
                     <img className="meal-img" src={greeksalad} alt="" />
                     <span className="">
                         <div className="d-flex flex-row justify-content-between">
-                            <div className="meal-header display-2">Greek Salad</div>
-                            <div className="meal-price display-2">12,99€</div>
+                            <div className="meal-header">Greek Salad</div>
+                            <div className="meal-price">12,99€</div>
                         </div>
-                        <p className="meal-content display-6">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        <p className="meal-content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                             sed diam nonumy eirmod tempor invidunt ut labore et dolore
                             magna aliquyam erat</p>
                         <div className="d-flex justify-content-center">
@@ -39,10 +39,10 @@ const Menu = () => {
                     <img className="meal-img" src={bruchetta} alt="" />
                     <span className="">
                         <div className="d-flex flex-row justify-content-between">
-                            <div className="meal-header display-2">Bruchetta</div>
-                            <div className="meal-price display-2">4,99€</div>
+                            <div className="meal-header">Bruchetta</div>
+                            <div className="meal-price">4,99€</div>
                         </div>
-                        <p className="meal-content display-6">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        <p className="meal-content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                             sed diam nonumy eirmod tempor invidunt ut labore et dolore
                             magna aliquyam erat</p>
                         <div className="d-flex justify-content-center">
@@ -55,12 +55,12 @@ const Menu = () => {
                     <img className="meal-img" src={lemonDessert} alt="" />
                     <span className="">
                         <div className="d-flex flex-row justify-content-between">
-                            <div className="meal-header display-2">Lemon Dessert</div>
-                            <div className="meal-price display-2">2,99€</div>
+                            <div className="meal-header">Lemon Dessert</div>
+                            <div className="meal-price">2,99€</div>
                         </div>
-                        <p className="meal-content display-6">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                            sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                            magna aliquyam erat</p>
+                        <p className="meal-content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                            sed diam nonumy eirmod tempor invidun
+                           </p>
                         <div className="d-flex justify-content-center">
                             <button className="meal-button">Order delivery</button>
                         </div>
