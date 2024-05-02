@@ -4,12 +4,14 @@
     filter: drop-shadow(10px 10px 18px #000000);
     gap: 2rem;
     width: 85% !important;
-    padding: 5rem !important;
+    max-width: 60rem !important;
+    max-height: 30rem !important;
+    padding: 2rem !important;
 }
 
 .main-header {
-    font-size: 6.5rem;
-    font-weight: 900;
+    /* font-size: 5.5rem; */
+    font-weight: 900 !important;
     color: #F4CE14 !important;
 }
 
@@ -25,7 +27,7 @@
     color: black;
     outline: none;
     border: none;
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight: 700;
     border-radius: 30px;
     padding: 1rem;
@@ -39,11 +41,10 @@
 }
 
 .main-pic {
-    border-radius: 10px;
-    max-width: 100%;
+    /* border-radius: 10px;
+    max-width: 20rem;
     height: 80%;
-    width: 100%;
-    margin: auto;
+    margin: auto; */
     object-fit: cover;
 }
 
@@ -54,10 +55,17 @@
 .mobile-button {
     display: none !important;
 }
-@media screen and (max-width: 1000px) {
+
+.mobile-button-box {
+    width: 0px !important;
+    height: 0px !important;
+}
+
+@media screen and (max-width: 800px) {
     .main-layout {
         flex-direction: column !important;
         padding: 2rem !important;
+        max-height: 45rem !important;
     }
 
     .main-header {
@@ -66,10 +74,7 @@
     }
 
     .main-pic {
-        max-width: 100%;
-        /* Ensure image doesn't exceed parent width */
-        height: auto;
-        /* Maintain aspect ratio */
+        max-height: 20rem !important;
     }
 
     .desktop-button {
@@ -78,5 +83,10 @@
 
     .mobile-button {
         display: block !important;
+    }
+
+    .mobile-button-box {
+        width: auto !important;
+        height: auto !important;
     }
 }

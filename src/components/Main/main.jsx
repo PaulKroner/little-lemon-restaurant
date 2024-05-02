@@ -19,7 +19,7 @@ const Main = () => {
       <div className="main-layout container d-flex justify-content-center mb-5">
         <span className="d-flex flex-column justify-content-around align-itmes-center">
           <header>
-            <h1 className="main-header">Little Lemon Restaurant</h1>
+            <h1 className="main-header display-1">Little Lemon Restaurant</h1>
           </header>
 
           {/* <span className="main-text-content">
@@ -29,7 +29,7 @@ const Main = () => {
             At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
           </span> */}
           <div className="d-flex justify-content-center">
-            <button className="desktop-button main-button w-75" onClick={ReserveTable}>
+            <button className="desktop-button main-button w-50" onClick={ReserveTable}>
               Reserve a table
             </button>
           </div>
@@ -37,14 +37,14 @@ const Main = () => {
         </span>
 
         <span className="d-flex justify-content-center align-itmes-center">
-          <img className="main-pic" src={restaurtantfood} alt="" />
+          <img className="main-pic img-fluid" src={restaurtantfood} alt="" />
         </span>
 
-        <div className="d-flex justify-content-center">
-            <button className="mobile-button main-button w-75" onClick={ReserveTable}>
-              Reserve a table
-            </button>
-          </div>
+        <div className="d-flex justify-content-center mobile-button-box">
+          <button className="mobile-button main-button" onClick={ReserveTable}>
+            Reserve a table
+          </button>
+        </div>
 
       </div>
 
