@@ -4,7 +4,7 @@
     background-color: #f1f1f1;
     padding: 2rem;
     box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
-    gap: 1rem;
+    /* gap: 1rem; */
 }
 
 .date-heading {
@@ -22,8 +22,6 @@
 .date-counter-layout {
     background-color: green;
     border-radius: 10px;
-    padding: 1rem;
-    /* width: 55%; */
 }
 
 .date-display {

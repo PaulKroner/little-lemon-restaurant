@@ -55,11 +55,11 @@ const DateSelect = (props) => {
 
     return (
         <div>
-            <div className="date-layout d-flex flex-row justify-content-between">
+            <div className="date-layout d-flex flex-wrap justify-content-between">
                 <h1 className="date-heading d-flex justify-content-center align-items-center">Date</h1>
                 <div className="date-counter-layout d-flex justify-content-center align-items-center">
 
-                    <span className="date-display d-flex flex-column">
+                    <span className="date-display d-flex flex-column p-3">
                         <div className="">
                             {
                                 dateStr[2] + " " + dateStr[1] + " " + dateStr[3]
