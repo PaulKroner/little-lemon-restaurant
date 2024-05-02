@@ -47,9 +47,13 @@ ul {
     display: none;
 }
 
+.no-scroll {
+    overflow: hidden;
+  }
+
 /* mobile */
 
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1080px) {
     .navigationbar {
         padding: 1rem;
         padding-left: 1rem !important;

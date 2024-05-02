@@ -11,7 +11,18 @@ const Nav = () => {
 
     const toggleSidebar = () => {
         setSidebarOpen(!sidebarOpen);
-        console.log(sidebarOpen)
+        toggleScroll();
+    };
+
+    const [scrollEnabled, setScrollEnabled] = useState(true);
+
+    const toggleScroll = () => {
+        setScrollEnabled(!scrollEnabled);
+        if (!scrollEnabled) {
+            document.body.classList.remove('no-scroll');
+        } else {
+            document.body.classList.add('no-scroll');
+        }
     };
 
     return (
