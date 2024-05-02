@@ -3,17 +3,25 @@ import "./menu.css";
 import greeksalad from "../../../assets/greekSalad.jpg";
 import bruchetta from "../../../assets/bruchetta.svg";
 import lemonDessert from "../../../assets/lemonDessert.jpg";
+import { useNavigate } from "react-router-dom";
 
 
 const Menu = () => {
+
+    const navigate = useNavigate();
+
+    const orderOnline = () => {
+      navigate('/orderonline');
+    }
+
     return (
         <div className="container-fluid d-flex flex-column p-3">
             {/* <h1>Menu</h1> */}
             {/* <Header title="test" buttonText="klick" /> */}
 
-            <div className="order-online-header d-flex justify-content-between mb-3">
+            <div className="order-online-header d-flex justify-content-center mb-3">
                 <span className="specials">This week specials</span>
-                <button type="button" className="order-online-button">Online Menu</button>
+                {/* <button type="button" className="order-online-button">Online Menu</button> */}
             </div>
 
             <div className="d-flex flex-wrap justify-content-center align-items-center p-1 gap-4">
@@ -29,7 +37,7 @@ const Menu = () => {
                             sed diam nonumy eirmod tempor invidunt ut labore et dolore
                             magna aliquyam erat</p>
                         <div className="d-flex justify-content-center">
-                            <button className="meal-button">Order delivery</button>
+                            <button className="meal-button" onClick={orderOnline}>Order delivery</button>
                         </div>
                     </span>
 
@@ -46,7 +54,7 @@ const Menu = () => {
                             sed diam nonumy eirmod tempor invidunt ut labore et dolore
                             magna aliquyam erat</p>
                         <div className="d-flex justify-content-center">
-                            <button className="meal-button">Order delivery</button>
+                            <button className="meal-button" onClick={orderOnline}>Order delivery</button>
                         </div>
                     </span>
                 </div>
@@ -62,7 +70,7 @@ const Menu = () => {
                             sed diam nonumy eirmod tempor invidun
                            </p>
                         <div className="d-flex justify-content-center">
-                            <button className="meal-button">Order delivery</button>
+                            <button className="meal-button" onClick={orderOnline}>Order delivery</button>
                         </div>
                     </span>
                 </div>
