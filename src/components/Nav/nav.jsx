@@ -32,7 +32,7 @@ const Nav = () => {
                     <img src={logo} alt="logo" />
                 </div>
                 <ul className={`nav-list ${sidebarOpen ? 'sidebar-open' : ''} d-flex justify-content-center align-items-center`}>
-                    <Link className="link" to="/">Home</Link>
+                    <Link className="link" to="/home">Home</Link>
                     <Link className="link" to="/menu">Menu</Link>
                     <Link className="link" to="/reservation">Reservation</Link>
                     <Link className="link" to="/orderonline">Order Online</Link>

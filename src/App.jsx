@@ -17,14 +17,13 @@ function App() {
 
       <Nav />
         <Routes>
-          <Route path="/" element={<Main />} />
+          <Route path="/home" element={<Main />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/reservation" element={<Reservation />} />
           <Route path="/orderonline" element={<OrderOnline />} />
           <Route path="/about" element={<About />} />
-          <Route path='/ConfirmedBooking' element={<ConfirmedBooking/>}/>
+          <Route path='/ConfirmedBooking' element={<ConfirmedBooking/>}/>#
         </Routes>
-
       <Footer />
 
     </>
