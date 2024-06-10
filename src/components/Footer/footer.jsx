@@ -4,7 +4,7 @@ import restaurant from "../../assets/restaurant.jpg"
 const Footer = () => {
   return (
     <div className="footer container-fluid">
-      <h1 className="footer-heading d-flex justify-content-center align-items-center">Footer</h1>
+      {/* <h1 className="footer-heading d-flex justify-content-center align-items-center">Footer</h1> */}
       <div className="footer-wrapper d-flex justify-content-center">
 
         <img src={restaurant} alt="restaurant" className="image-box" />

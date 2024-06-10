@@ -24,6 +24,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path='/ConfirmedBooking' element={<ConfirmedBooking/>}/>
         </Routes>
+
+       <Main /> 
       <Footer />
 
     </>
