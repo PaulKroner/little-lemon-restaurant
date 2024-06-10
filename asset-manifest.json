@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.95ba7c92.css",
+    "main.js": "/static/js/main.9d0e1c65.js",
+    "static/media/bruchetta.svg": "/static/media/bruchetta.ec4950d4eabf4293f4120e3b6c48b7cf.svg",
+    "static/media/greekSalad.jpg": "/static/media/greekSalad.bed423a1fab5b210e347.jpg",
+    "static/media/restauranfood.jpg": "/static/media/restauranfood.e8abf5b772b6817189aa.jpg",
+    "static/media/underConstruction.jpg": "/static/media/underConstruction.faed558edc62752230a6.jpg",
+    "static/media/restaurant.jpg": "/static/media/restaurant.324d0f99bdf19400a0f7.jpg",
+    "static/media/Logo.svg": "/static/media/Logo.2c379c7ea7eb07402bfc7700915316de.svg",
+    "static/media/customer1.jpg": "/static/media/customer1.ccdcea01362423e8e2bf.jpg",
+    "static/media/customer3.jpg": "/static/media/customer3.ba5a7f9f30d58ab385d9.jpg",
+    "static/media/customer4.jpg": "/static/media/customer4.fa4be855aa1466a1fcb3.jpg",
+    "static/media/customer2.jpg": "/static/media/customer2.333854849cb34643a28e.jpg",
+    "index.html": "/index.html",
+    "main.95ba7c92.css.map": "/static/css/main.95ba7c92.css.map",
+    "main.9d0e1c65.js.map": "/static/js/main.9d0e1c65.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.95ba7c92.css",
+    "static/js/main.9d0e1c65.js"
+  ]
+}
