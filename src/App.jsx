@@ -25,7 +25,6 @@ function App() {
           <Route path='/ConfirmedBooking' element={<ConfirmedBooking/>}/>
         </Routes>
 
-       <Main /> 
       <Footer />
 
     </>
