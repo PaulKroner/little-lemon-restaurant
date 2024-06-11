@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { Routes } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import './App.css';
@@ -12,18 +13,37 @@ import About from './components/Main/About/about';
 import Footer from './components/Footer/footer';
 
 function App() {
+
+  const [rendered, setRendered] = useState(false);
+
+  useEffect(() => {
+    if (!rendered) {
+      setRendered(true);
+    }
+  }, [rendered]);
+
+
+  if (!rendered) {
+    return <div>Einmal gerenderte Komponente</div>;
+  }
+
   return (
     <>
 
       <Nav />
-        <Routes>
-          <Route path="/home" element={<Main />} />
-          <Route path="/menu" element={<Menu />} />
-          <Route path="/reservation" element={<Reservation />} />
-          <Route path="/orderonline" element={<OrderOnline />} />
-          <Route path="/about" element={<About />} />
-          <Route path='/ConfirmedBooking' element={<ConfirmedBooking/>}/>#
-        </Routes>
+      <Routes>
+        <Route path="/home" element={<Main />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/reservation" element={<Reservation />} />
+        <Route path="/orderonline" element={<OrderOnline />} />
+        <Route path="/about" element={<About />} />
+        <Route path='/ConfirmedBooking' element={<ConfirmedBooking />} />#
+      </Routes>
+      {rendered ?
+        (<Main />)
+        : (<></>)
+      }
+
       <Footer />
 
     </>
